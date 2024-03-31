@@ -4,8 +4,14 @@ import player2 from "../assets/player2.jpg"
 import player3 from "../assets/player3.jpg"
 import player4 from "../assets/player4.avif"
 import add from "../assets/add.jpeg"
+import Slider from "./Slider";
+
 
 export default function Home() {
+
+
+
+
   return (
     <main className="max-w-full min-h-screen mx-auto bg-[#F7F7F8] dark:bg-[#292B32] px-12 py-8">
       <div className="max-w-[1445px] mx-auto">
@@ -81,9 +87,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1445px] mx-auto my-10 py-10">
+      <div className="max-w-[1080px] mx-auto my-10 py-10">
         <h2 className="text-[#000000] dark:text-[#ffffff] text-5xl font-extrabold text-center mb-3">Collection Spotlight</h2>
         <p className="text-[#000000] dark:text-[#ffffff] text-sm text-center">Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable <br /> experience. Grab yours today!</p>
+        <div className="rounded-lg py-4 mt-10">
+          <Slider />
+        </div>
       </div>
     </main>
   );
